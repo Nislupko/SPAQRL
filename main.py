@@ -18,8 +18,6 @@ def get_actors(film):
             ?film wdt:P161 ?actor.
             minus 
                {
-                   ?film wdt:P1476 ?recFilm.
-                   ?film wdt:P161 ?actor.
                    ?actor wdt:P166 ?reward.
                    filter(?reward = wd:Q103618  || ?reward=wd:Q103916 || ?reward = wd:Q106291 || ?reward=wd:Q106301)
                }
